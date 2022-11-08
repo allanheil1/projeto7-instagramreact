@@ -1,16 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import NavBar  from './Components/NavBar';
-import Corpo  from './Components/Corpo';
-import '../src/style.css'
+import App from './App';
 
-function App(){
-  return(
-    <div>
-      <NavBar/> 
-      <Corpo/>
-    </div>
-  )
-}
-
-ReactDOM.render(App(), document.querySelector(".root"));
+ReactDOM.render(
+  <App/>, 
+  document.querySelector(".root")
+  );
