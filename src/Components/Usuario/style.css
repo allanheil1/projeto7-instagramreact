@@ -1,0 +1,24 @@
+.sb-profile-info {
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+	padding-bottom: 15px;
+	cursor:pointer;
+	box-sizing: border-box;
+}
+
+.profile-user-and-name {
+	font-style: normal;
+	font-size: 14px;
+	line-height: 16px;
+	margin-left: 15px;
+}
+
+.profile-user-and-name h1 {
+	font-weight: 500;
+	color: #262626;
+}
+
+.profile-user-and-name h2 {
+	color: #8e8e8e;
+}

@@ -1,0 +1,13 @@
+.main-container {
+	background-color: #e5e5e5;
+	width: 935px;
+	margin-top: 54px;
+	display: flex;
+	justify-content: center;
+}
+
+.content-container {
+	width: 614px;
+	display: flex;
+	flex-direction: column;
+}

@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { NavBar } from './Components/NavBar';
-import { MainContainer } from './Components/Corpo';
+import NavBar  from './Components/NavBar';
+import Corpo  from './Components/Corpo';
 import '../src/style.css'
 
 function App(){
   return(
     <div>
-      <NavBar/>
-      <MainContainer/>
+      <NavBar/> 
+      <Corpo/>
     </div>
   )
 }

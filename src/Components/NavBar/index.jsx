@@ -1,52 +1,53 @@
-import '../../../src/style.css'
+import './style.css'
+import '../../../src/reset.css'
 
-import InstagramLogo from '../../arquivos1/logo.png'
+import InstagramLogo from '../../assets/logo.png'
 
-export function NavBar(){
+export default function NavBar(){
     return(
         <nav>
-            <div class="top-menu">
-                <div class="top-menu-content">
-                    <div class="icon-logo">
-                        <div class="icon">
+            <div className="top-menu">
+                <div className="top-menu-content">
+                    <div className="icon-logo">
+                        <div className="icon">
                             <ion-icon name="logo-instagram"></ion-icon>
                         </div>
-                        <div class="logo">
+                        <div className="logo">
                             <img src={InstagramLogo} />
                         </div>
                     </div>
 
-                    <div class="search-bar">
+                    <div className="search-bar">
                         <p>Pesquisar</p>
                     </div>
-                    <div class="other-pages">
-                        <div class="icons">
+                    <div className="other-pages">
+                        <div className="icons">
                             <ion-icon name="paper-plane-outline"></ion-icon>
                         </div>
-                        <div class="icons">
+                        <div className="icons">
                             <ion-icon name="compass-outline"></ion-icon>
                         </div>
-                        <div class="icons">
+                        <div className="icons">
                             <ion-icon name="heart-outline"></ion-icon>
                         </div>
-                        <div class="icons">
+                        <div className="icons">
                             <ion-icon name="person-outline"></ion-icon>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="top-menu-mobile">
-                <div class="top-menu-mobile-content">
-                    <div class="icon-logo">
-                        <div class="icon-mobile">
+            <div className="top-menu-mobile">
+                <div className="top-menu-mobile-content">
+                    <div className="icon-logo">
+                        <div className="icon-mobile">
                             <ion-icon name="logo-instagram"></ion-icon>
                         </div>
                     </div>
-                    <div class="logo-mobile">
+                    <div className="logo-mobile">
                         <img src={InstagramLogo} />
                     </div>
-                    <div class="other-pages">
-                        <div class="icons-right">
+                    <div className="other-pages">
+                        <div className="icons-right">
                             <ion-icon name="paper-plane-outline"></ion-icon>
                         </div>
                     </div>
