@@ -1,4 +1,5 @@
 import './style.css'
+import '../../../src/reset.css'
 import IcoBadVibes from '../../assets/icobadvibes.png'
 import IcoChibirDart from '../../assets/icochibirdart.png'
 import IcoRazoes from '../../assets/icorazoes.png'

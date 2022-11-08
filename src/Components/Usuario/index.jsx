@@ -1,4 +1,5 @@
 import './style.css'
+import '../../../src/reset.css'
 import IcoCatana from '../../assets/icocatanacomics.png'
 
 export default function Usuario() {

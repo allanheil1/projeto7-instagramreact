@@ -6,11 +6,9 @@ import Sugestoes from '../Sugestoes';
 
 export default function Sidebar() {
     return (
-        <div>
-            <div class="sidebar">
-                <Usuario/>
-                <Sugestoes/>
-            </div>
+        <div class = "sidebar">
+            <Usuario/>
+            <Sugestoes/>
             <div class="sb-about">
                 <h1>
                     Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos

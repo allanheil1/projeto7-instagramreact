@@ -1,8 +1,8 @@
+import './style.css'
+import '../../../src/reset.css'
 import Stories from '../Stories';
 import Posts from '../Posts';
 import Sidebar from '../Sidebar';
-import './style.css'
-import '../../../src/reset.css'
 
 export default function Corpo(){
     return(

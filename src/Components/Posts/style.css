@@ -116,3 +116,9 @@
 .spanClassName{
 	font-weight: bold;
 }
+
+@media (max-width: 614px){
+	.post-last{
+		margin-bottom: 54px;
+	}
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import NavBar  from './Components/NavBar';
 import Corpo  from './Components/Corpo';
+import BottomMenu from './Components/BottomMenu';
 import '../src/style.css'
 
 export default function App(){
@@ -8,6 +9,7 @@ export default function App(){
     <div>
       <NavBar/> 
       <Corpo/>
+      <BottomMenu/>
     </div>
   );
 }
