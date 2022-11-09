@@ -7,26 +7,6 @@ import IcoRazoes from '../../assets/icorazoes.png'
 import IcoAdorable from '../../assets/icoadorableanimals2.png'
 import IcoCuteCats from '../../assets/icocutecats.png'
 
-export default function Sugestoes() {
-    return (
-        <div class="sb-suggestions">
-            <div class="sb-suggestions-header">
-                <h1>Sugestões para você</h1>
-                <h2>Ver tudo</h2>
-            </div>
-            <div class="sb-suggestions-pages">
-                {sugestoes.map(sugestao => (
-                    <Sugestao
-                        icon={sugestao.icon}
-                        userName={sugestao.userName}
-                        follow={sugestao.follow}
-                    />
-                ))}
-            </div>
-        </div>
-    );
-}
-
 let sugestoes = [
     {
         id: 1,
@@ -59,3 +39,24 @@ let sugestoes = [
         follow: 'Segue você',
     },
 ]
+
+export default function Sugestoes() {
+    return (
+        <div class="sb-suggestions">
+            <div class="sb-suggestions-header">
+                <h1>Sugestões para você</h1>
+                <h2>Ver tudo</h2>
+            </div>
+            <div class="sb-suggestions-pages">
+                {sugestoes.map(sugestao => (
+                    <Sugestao
+                        icon={sugestao.icon}
+                        userName={sugestao.userName}
+                        follow={sugestao.follow}
+                    />
+                ))}
+            </div>
+        </div>
+    );
+}
+

@@ -6,10 +6,10 @@ import '../src/style.css'
 
 export default function App(){
   return(
-    <body>
+    <>
       <NavBar/> 
       <Corpo/>
       <BottomMenu/>
-    </body>
+    </>
   );
 }

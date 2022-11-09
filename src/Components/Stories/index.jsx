@@ -10,22 +10,6 @@ import IcoResponde from '../../assets/icorespondeai2.png'
 import IcoFiloMod from '../../assets/icofilomoderna.png'
 import IcoMemeria from '../../assets/icomemeriagourmet.png'
 
-export default function Stories() {
-    return (
-        <div className="stories-container">
-            {stories.map(story => (
-                <Story 
-                userName={story.userName} 
-                icon={story.icon}
-                />
-            ))}
-            <div className="arrow-icon">
-                <ion-icon name="chevron-forward-circle"></ion-icon>
-            </div>
-        </div>
-    );
-}
-
 let stories = [
     {
         id: 1,
@@ -68,3 +52,20 @@ let stories = [
         icon: IcoMemeria,
     },
 ]
+
+export default function Stories() {
+    return (
+        <div className="stories-container">
+            {stories.map(story => (
+                <Story 
+                userName={story.userName} 
+                icon={story.icon}
+                />
+            ))}
+            <div className="arrow-icon">
+                <ion-icon name="chevron-forward-circle"></ion-icon>
+            </div>
+        </div>
+    );
+}
+

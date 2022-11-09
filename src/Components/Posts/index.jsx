@@ -8,24 +8,6 @@ import FotoCachorro from '../../assets/fotocachorro.png'
 import IcoAdorable from '../../assets/icoadorableanimals.png'
 import IcoResponde from '../../assets/icorespondeai.png'
 
-export default function Posts() {
-    return (
-        <div className="post-container">
-            {posts.map(post => (
-                <Post
-                    key={post.id}
-                    userName={post.userName}
-                    userIcon={post.userIcon} 
-                    postPhoto={post.postPhoto}
-                    likeIcon={post.likeIcon}
-                    likedBy={post.likedBy} 
-                    numberOfLikes={post.numberOfLikes}
-                />
-            ))}
-        </div>
-     );
-}
-
 let posts = [
     {
         id: 1,
@@ -55,3 +37,22 @@ let posts = [
         numberOfLikes: "104.988"
     }
 ]
+
+export default function Posts() {
+    return (
+        <div className="post-container">
+            {posts.map(post => (
+                <Post
+                    key={post.id}
+                    userName={post.userName}
+                    userIcon={post.userIcon} 
+                    postPhoto={post.postPhoto}
+                    likeIcon={post.likeIcon}
+                    likedBy={post.likedBy} 
+                    numberOfLikes={post.numberOfLikes}
+                />
+            ))}
+        </div>
+     );
+}
+
