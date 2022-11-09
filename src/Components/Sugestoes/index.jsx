@@ -1,5 +1,6 @@
 import './style.css'
 import '../../../src/reset.css'
+import Sugestao from '../Sugestao'
 import IcoBadVibes from '../../assets/icobadvibes.png'
 import IcoChibirDart from '../../assets/icochibirdart.png'
 import IcoRazoes from '../../assets/icorazoes.png'
@@ -14,66 +15,11 @@ export default function Sugestoes() {
                     <h2>Ver tudo</h2>
                 </div>
                 <div class="sb-suggestions-pages">
-                    <div class="suggested-page">
-                        <div class="icon-profile-suggested-pages">
-                            <img src={IcoBadVibes} />
-                        </div>
-                        <div class="page-text">
-                            <h1>bad.vibes.memes</h1>
-                            <h2>Segue você</h2>
-                        </div>
-                        <div class="seguir">
-                            <h1>Seguir</h1>
-                        </div>
-                    </div>
-                    <div class="suggested-page">
-                        <div class="icon-profile-suggested-pages">
-                            <img src={IcoChibirDart} />
-                        </div>
-                        <div class="page-text">
-                            <h1>chibirdart</h1>
-                            <h2>Segue você</h2>
-                        </div>
-                        <div class="seguir">
-                            <h1>Seguir</h1>
-                        </div>
-                    </div>
-                    <div class="suggested-page">
-                        <div class="icon-profile-suggested-pages">
-                            <img src={IcoRazoes} />
-                        </div>
-                        <div class="page-text">
-                            <h1>razoesparaacreditar</h1>
-                            <h2>Novo no instagram</h2>
-                        </div>
-                        <div class="seguir">
-                            <h1>Seguir</h1>
-                        </div>
-                    </div>
-                    <div class="suggested-page">
-                        <div class="icon-profile-suggested-pages">
-                            <img src={IcoAdorable} />
-                        </div>
-                        <div class="page-text">
-                            <h1>adorable_animals</h1>
-                            <h2>Segue você</h2>
-                        </div>
-                        <div class="seguir">
-                            <h1>Seguir</h1>
-                        </div>
-                    </div>
-                    <div class="suggested-page">
-                        <div class="icon-profile-suggested-pages">
-                            <img src={IcoCuteCats} />
-                        </div>
-                        <div class="page-text">
-                            <h1>smallcutecats</h1>
-                            <h2>Segue você</h2>
-                        </div>
-                        <div class="seguir">
-                            <h1>Seguir</h1>
-                        </div>
-                    </div>
+                    <Sugestao icon={IcoBadVibes} userName="bad.vibes.memes" follow="Segue você"/>
+                    <Sugestao icon={IcoChibirDart} userName="chibirdart" follow="Segue você"/>
+                    <Sugestao icon={IcoRazoes} userName="razoesparaacreditar" follow="Novo no Instagram"/>
+                    <Sugestao icon={IcoAdorable} userName="adorable_animals" follow="Segue você"/>
+                    <Sugestao icon={IcoCuteCats} userName="smallcutecats" follow="Segue você"/>
                 </div>
             </div>
     );
