@@ -1,5 +1,6 @@
 import './style.css'
 import '../../../src/reset.css'
+import IcoCatana from '../../assets/icocatanacomics.png'
 import Usuario from '../Usuario';
 import Sugestoes from '../Sugestoes';
 
@@ -7,7 +8,7 @@ import Sugestoes from '../Sugestoes';
 export default function Sidebar() {
     return (
         <div class = "sidebar">
-            <Usuario/>
+            <Usuario icon={IcoCatana} userName="catanacomics" name = "Catana"/>
             <Sugestoes/>
             <div class="sb-about">
                 <h1>

@@ -1,16 +1,16 @@
 import './style.css'
 import '../../../src/reset.css'
-import IcoCatana from '../../assets/icocatanacomics.png'
 
-export default function Usuario() {
+
+export default function Usuario(props) {
     return (
         <div class="sb-profile-info">
             <div>
-                <img src={IcoCatana} />
+                <img src={props.icon} />
             </div>
             <div class="profile-user-and-name">
-                <h1>catanacomics</h1>
-                <h2>Catana</h2>
+                <h1>{props.userName}</h1>
+                <h2>{props.name}</h2>
             </div>
         </div>
     );
