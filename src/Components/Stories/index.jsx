@@ -13,17 +13,58 @@ import IcoMemeria from '../../assets/icomemeriagourmet.png'
 export default function Stories() {
     return (
         <div className="stories-container">
-            <Story userName="9gag" icon={Ico9gag}/>
-            <Story userName="meowed" icon={IcoMeowed}/>
-            <Story userName="barked" icon={IcoBarked}/>
-            <Story userName="nathanwpy..." icon={IcoNathan}/>
-            <Story userName="wawawiwac..." icon={IcoWawa}/>
-            <Story userName="respondeai" icon={IcoResponde}/>
-            <Story userName="filomoderna" icon={IcoFiloMod}/>
-            <Story userName="memeriagour" icon={IcoMemeria}/>
+            {stories.map(story => (
+                <Story 
+                userName={story.userName} 
+                icon={story.icon}
+                />
+            ))}
             <div className="arrow-icon">
                 <ion-icon name="chevron-forward-circle"></ion-icon>
             </div>
         </div>
     );
 }
+
+let stories = [
+    {
+        id: 1,
+        userName: "9gag",
+        icon: Ico9gag,
+    },
+    {
+        id: 2,
+        userName: "meowed",
+        icon: IcoMeowed,
+    },
+    {
+        id: 3,
+        userName: "barked",
+        icon: IcoBarked,
+    },
+    {
+        id: 4,
+        userName: "nathanwpy...",
+        icon: IcoNathan,
+    },
+    {
+        id: 5,
+        userName: "wawawiwac...",
+        icon: IcoWawa,
+    },
+    {
+        id: 6,
+        userName: "respondeai",
+        icon: IcoResponde,
+    },
+    {
+        id: 7,
+        userName: "filomoderna",
+        icon: IcoFiloMod,
+    },
+    {
+        id: 8,
+        userName: "memeriagour",
+        icon: IcoMemeria,
+    },
+]

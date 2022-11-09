@@ -11,26 +11,47 @@ import IcoResponde from '../../assets/icorespondeai.png'
 export default function Posts() {
     return (
         <div className="post-container">
-            <Post userName="meowed" 
-            userIcon={IcoMeowed} 
-            postPhoto={FotoGato}
-            likeIcon={IcoResponde}
-            likedBy="respondeai" 
-            numberOfLikes="101.523"/>
-
-            <Post userName="barked" 
-            userIcon={IcoBarked} 
-            postPhoto={FotoCachorro}
-            likeIcon={IcoAdorable}
-            likedBy="adorable_animals" 
-            numberOfLikes="99.159"/>
-
-            <Post userName="meowed2" 
-            userIcon={IcoMeowed} 
-            postPhoto={FotoGato}
-            likeIcon={IcoAdorable}
-            likedBy="adorable_animals2" 
-            numberOfLikes="97.523"/>
+            {posts.map(post => (
+                <Post
+                    key={post.id}
+                    userName={post.userName}
+                    userIcon={post.userIcon} 
+                    postPhoto={post.postPhoto}
+                    likeIcon={post.likeIcon}
+                    likedBy={post.likedBy} 
+                    numberOfLikes={post.numberOfLikes}
+                />
+            ))}
         </div>
-            );
+     );
 }
+
+let posts = [
+    {
+        id: 1,
+        userName: "meowed",
+        userIcon: IcoMeowed,
+        postPhoto: FotoGato,
+        likeIcon: IcoResponde,
+        likedBy: "respondeai", 
+        numberOfLikes: "101.523"
+    },
+    {
+        id: 1,
+        userName: "barked",
+        userIcon: IcoBarked,
+        postPhoto: FotoCachorro,
+        likeIcon: IcoAdorable,
+        likedBy: "adorable_animals", 
+        numberOfLikes: "00.159"
+    },
+    {
+        id: 1,
+        userName: "meowed2",
+        userIcon: IcoMeowed,
+        postPhoto: FotoGato,
+        likeIcon: IcoResponde,
+        likedBy: "respondeai2", 
+        numberOfLikes: "104.988"
+    }
+]
