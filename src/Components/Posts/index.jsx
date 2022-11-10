@@ -16,7 +16,7 @@ let posts = [
         postPhoto: FotoGato,
         likeIcon: IcoResponde,
         likedBy: "respondeai", 
-        numberOfLikes: "101.523"
+        numberOfLikes: 101523,
     },
     {
         id: 1,
@@ -25,7 +25,7 @@ let posts = [
         postPhoto: FotoCachorro,
         likeIcon: IcoAdorable,
         likedBy: "adorable_animals", 
-        numberOfLikes: "00.159"
+        numberOfLikes: 100159,
     },
     {
         id: 1,
@@ -34,7 +34,7 @@ let posts = [
         postPhoto: FotoGato,
         likeIcon: IcoResponde,
         likedBy: "respondeai2", 
-        numberOfLikes: "104.988"
+        numberOfLikes: 104988,
     }
 ]
 

@@ -1,8 +1,29 @@
 import './style.css'
 import '../../../src/reset.css'
-
+import React from 'react'
 
 export default function Post(props) {
+
+    const [BoolBookMarked, setBoolBookMarked] = React.useState(false);
+    const [BoolLiked, setBoolLiked] = React.useState(false);
+    const [NumberOfLikes, setNumberOfLikes] = React.useState(props.numberOfLikes);
+
+    function likePost(){
+        let NumberOfLikesVar = NumberOfLikes;
+        setBoolLiked(!BoolLiked);
+        if(BoolLiked === false){
+            NumberOfLikesVar++;
+            setNumberOfLikes(NumberOfLikesVar);
+        }else{
+            NumberOfLikesVar--;
+            setNumberOfLikes(NumberOfLikesVar);
+        }
+    }
+
+    function tagBookMarked(){
+        setBoolBookMarked(!BoolBookMarked);
+    }
+
     return(
     <div className="post">
         <div className="post-header">
@@ -16,8 +37,8 @@ export default function Post(props) {
         <div className="post-under">
             <div className="post-interact">
                 <div className="post-interact-left">
-                    <div className="icons">
-                        <ion-icon name="heart-outline"></ion-icon>
+                    <div className="icons" onClick={likePost}>
+                        {BoolLiked ? <ion-icon name="heart"></ion-icon> : <ion-icon name="heart-outline"></ion-icon>}
                     </div>
                     <div className="icons">
                         <ion-icon name="chatbubble-outline"></ion-icon>
@@ -27,8 +48,8 @@ export default function Post(props) {
                     </div>
                 </div>
                 <div className="post-interact-right">
-                    <div className="icons-right">
-                        <ion-icon name="bookmark-outline"></ion-icon>
+                    <div className="icons-right" onClick={tagBookMarked}>
+                        {BoolBookMarked ? <ion-icon name="bookmark"></ion-icon> : <ion-icon name="bookmark-outline"></ion-icon>}
                     </div>
                 </div>
             </div>
@@ -38,7 +59,7 @@ export default function Post(props) {
                     Curtido por
                     <span className="spanClassName"> {props.likedBy}</span> e
                     <span className="spanClassName"
-                    > outras {props.numberOfLikes} pessoas</span
+                    > outras {NumberOfLikes} pessoas</span
                     >
                 </h1>
             </div>
